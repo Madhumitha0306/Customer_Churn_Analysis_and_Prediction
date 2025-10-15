@@ -6,13 +6,10 @@ The ultimate goal is to provide data-driven insights and strategies to improve c
 
 Objectives
 
-Understand the factors contributing to churn.
-
-Perform exploratory data analysis (EDA) on customer demographics and service usage.
-
-Build a machine learning model to predict churn probability.
-
-Suggest customer retention strategies based on insights.
+* Understand the factors contributing to churn.
+* Perform exploratory data analysis (EDA) on customer demographics and service usage.
+* Build a machine learning model to predict churn probability.
+* Suggest customer retention strategies based on insights.
 
 Dataset
 
@@ -21,110 +18,82 @@ Source: Telco Customer Churn dataset (commonly used for churn prediction studies
 
 Key Columns:
 
-customerID: Unique ID for each customer
+* customerID: Unique ID for each customer
 
-gender, SeniorCitizen, Partner, Dependents: Demographic information
+* gender, SeniorCitizen, Partner, Dependents: Demographic information
 
-tenure: Number of months the customer has stayed
+* tenure: Number of months the customer has stayed
 
-InternetService, Contract, PaymentMethod: Service details
+* InternetService, Contract, PaymentMethod: Service details
 
-MonthlyCharges, TotalCharges: Billing details
+* MonthlyCharges, TotalCharges: Billing details
 
-Churn: Whether the customer left (Yes/No)
+* Churn: Whether the customer left (Yes/No)
 
 Task 1: Data Cleaning & Preprocessing
 
-Handled missing values and data inconsistencies
-
-Converted categorical variables using One-Hot Encoding
-
-Cleaned data saved as Telco_Customer_Churn_Cleaned.csv
+* Handled missing values and data inconsistencies
+* Converted categorical variables using One-Hot Encoding
+* Cleaned data saved as Telco_Customer_Churn_Cleaned.csv
+  
 Task 2: Exploratory Data Analysis (EDA)
 
-Calculated overall churn rate
-
-Analyzed churn by gender, tenure, contract type, and payment method
-
-Visualized patterns using:
-
-Count plots
-
-Pie charts
-
-Distribution plots
-
-Correlation heatmaps
+* Calculated overall churn rate
+* Analyzed churn by gender, tenure, contract type, and payment method
+* Visualized patterns using:
+* Count plots
+* Pie charts
+* Distribution plots
+* Correlation heatmaps
+  
 Task 3: Customer Segmentation
 
-Segmented customers by:
-
-Tenure groups (e.g., 0–12, 12–24, 24+ months)
-
-Monthly charges
-
-Contract type
+* Segmented customers by: Tenure groups (e.g., 0–12, 12–24, 24+ months)
+* Monthly charges
+* Contract type
 
 Compared churn rates across these segments using bar plots and histograms
+
 Task 4: Churn Prediction Model
 
-Developed a Logistic Regression model
+* Developed a Logistic Regression model
+* Trained on features like contract type, charges, and tenure
 
-Trained on features like contract type, charges, and tenure
+Evaluated using: Accuracy,Confusion Matrix,Classification Report
 
-Evaluated using:
-
-Accuracy
-
-Confusion Matrix
-
-Classification Report
 Task 5: Customer Retention Strategies
 
 Identified key churn factors (short tenure, high monthly charges, month-to-month contracts)
-
 Suggested strategies:
-
-Offer discounts to long-term loyal customers
-
-Introduce loyalty rewards for new users
-
-Improve service reliability for high-paying customers
-
-Calculated Customer Lifetime Value (CLV) to find high-value customers at churn risk
+* Offer discounts to long-term loyal customers
+* Introduce loyalty rewards for new users
+* Improve service reliability for high-paying customers
+* Calculated Customer Lifetime Value (CLV) to find high-value customers at churn risk
+  
 Task 6: Visualizations
 
 Created several insightful plots:
 
-Box Plot: Monthly Charges vs Churn
-
-Violin Plot: Tenure vs Churn
-
-Count Plot: Contract Type by Churn
-
-Pair Plot: Relationships between tenure, charges, and churn
-
-Heatmap: Correlation between numerical features
-
-Bar Plot: Internet Service vs Churn
-
+* Box Plot: Monthly Charges vs Churn
+* Violin Plot: Tenure vs Churn
+* Count Plot: Contract Type by Churn
+* Pair Plot: Relationships between tenure, charges, and churn
+* Heatmap: Correlation between numerical features
+* Bar Plot: Internet Service vs Churn
+  
 Key Insights
 
-Customers on month-to-month contracts have the highest churn.
-
-Higher monthly charges correlate strongly with churn.
-
-Long-tenure customers are less likely to churn.
-
-Electronic check payment method users are more prone to churn.
+* Customers on month-to-month contracts have the highest churn.
+* Higher monthly charges correlate strongly with churn.
+* Long-tenure customers are less likely to churn.
+* Electronic check payment method users are more prone to churn.
 
 Results
 
-Achieved ~80% accuracy using Logistic Regression.
-
-Generated actionable business insights to reduce churn.
-
-Created clear visualizations for management presentation.
+* Achieved ~80% accuracy using Logistic Regression.
+* Generated actionable business insights to reduce churn.
+* Created clear visualizations for management presentation.
+  
 Conclusion
 
 This project successfully combines data analysis, visualization, and machine learning to understand customer behavior and predict churn.
